@@ -1,0 +1,82 @@
+.contactBody {
+  background-color: #fff;
+  font-family: $primaryFont;
+
+  nav {
+    background-color: $secondaryColor;
+    @include flex(space-between, center);
+    padding: 30px 40px;
+
+    img {
+      height: 60px;
+    }
+
+    ul {
+      @include flex(space-between, center);
+      list-style-type: none;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin: 0 0.5rem;
+        transition: all 500ms linear;
+
+        &:hover {
+          background-color: #fff;
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+
+  > h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 40px 0;
+
+    span {
+      color: $primaryColor;
+      text-transform: uppercase;
+    }
+  }
+
+  .contact {
+    > div {
+      @include flex(space-between, flex-start);
+      margin-bottom: 5rem;
+
+      img {
+        width: 50%;
+      }
+
+      > div {
+        @include flex(space-between, flex-start);
+        flex-direction: column;
+        padding: 0 50px;
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          max-width: 600px;
+          padding: 25px 0;
+
+          span {
+            text-transform: uppercase;
+            color: $primaryColor;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: #000;
+  }
+}

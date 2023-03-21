@@ -1,0 +1,39 @@
+.end {
+  position: relative;
+  height: 900px;
+  font-family: $secondaryFont;
+  background: url("./images/end.jpg") center/cover no-repeat;
+  overflow-x: hidden;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  h1 {
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    min-width: 100%;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  h2 {
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+    font-weight: 600;
+    font-style: italic;
+    min-width: 100%;
+    text-align: center;
+    padding: 0 10px;
+  }
+}

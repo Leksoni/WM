@@ -1,0 +1,91 @@
+.dashboardBody {
+  background-color: #fff;
+  font-family: $primaryFont;
+
+  nav {
+    background-color: $secondaryColor;
+    @include flex(space-between, center);
+    padding: 30px 40px;
+
+    img {
+      height: 60px;
+    }
+
+    input {
+      border-radius: 10px;
+      padding: 10px 10px 10px 15px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      background: none;
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      padding: 10px 15px;
+      transition: all 500ms ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fff;
+        color: $secondaryColor;
+      }
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #fff;
+      border-radius: 20px;
+      padding: 10px 20px;
+      transition: all 500ms ease;
+
+      &:hover {
+        background-color: #fff;
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  .dashboard {
+    padding: 0 70px;
+
+    h1 {
+      border-bottom: 1px solid #eee;
+      margin: 2rem 0;
+      padding-bottom: 20px;
+    }
+
+    .bestCustomers {
+      @include flex(space-around, center);
+      text-align: center;
+      margin: 3rem 0 5rem 0;
+
+      h3 {
+        font-weight: 400;
+      }
+
+      img {
+        height: 200px;
+        border-radius: 50%;
+      }
+    }
+
+    table:first-of-type {
+      margin-bottom: 5rem;
+    }
+  }
+
+  footer {
+    background-color: #000;
+    margin-top: 15rem;
+    padding: 60px 50px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

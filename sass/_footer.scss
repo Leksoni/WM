@@ -1,0 +1,37 @@
+footer {
+  @include flex(space-between, center);
+  padding: 90px 50px;
+  background: rgb(46, 66, 16);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 66, 16, 1) 66%,
+    rgba(46, 66, 16, 0.5) 100%
+  );
+
+  ul {
+    @include flex(center, center);
+    list-style-type: none;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0 10px;
+      padding: 5px 20px;
+      border: 3px solid $primaryColor;
+      border-radius: 50px;
+      background-image: linear-gradient($primaryColor, $primaryColor),
+        linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+      background-size: 0 100%, auto;
+      background-repeat: no-repeat;
+      background-position: center center;
+      cursor: pointer;
+      transition: all 300ms ease-out;
+
+      &:hover {
+        background-size: 110% 110%, auto;
+      }
+    }
+  }
+}

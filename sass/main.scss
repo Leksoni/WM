@@ -1,0 +1,31 @@
+@import "config", "header", "about", "customers", "end", "register", "login",
+  "dashboard", "contact", "error", "footer", "sidebar", "responsive";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+}
+
+header,
+section,
+footer {
+  font-family: $primaryFont;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}

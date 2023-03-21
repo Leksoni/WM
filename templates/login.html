@@ -1,0 +1,29 @@
+{% extends "bootstrap/base.html" %} {% import "bootstrap/wtf.html" as wtf %} {%
+block title %} Walkmate - Login {% endblock %} {% block styles %} {{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='main.css')}}" />
+<link rel="shortcut icon" href="{{ url_for('static', filename='logo.ico') }}" />
+{% endblock %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <section class="login">
+      <a href="{{ url_for('index') }}" id="backHome">Back home</a>
+      <form method="POST" action="/login">
+        <h2>Please log in</h2>
+        {{ form.hidden_tag() }} {{ wtf.form_field(form.username) }} {{
+        wtf.form_field(form.password) }} {{ wtf.form_field(form.remember) }}
+        <button class="btn btn-lg btn-block" type="submit">Log in</button>
+      </form>
+      <p>
+        New to Walkmate? <br />
+        <a href="{{ url_for('register') }}">Create an account.</a>
+      </p>
+    </section>
+  </body>
+</html>
+{% endblock %}

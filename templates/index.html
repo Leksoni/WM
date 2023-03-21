@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../static/logo.ico" />
+    <link rel="stylesheet" href="../static/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Walkmate</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../static/images/logo.png" alt="Logo" />
+        <ul>
+          <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+          <li><a href="{{ url_for('login') }}">Log in</a></li>
+          <li><a href="{{ url_for('register') }}">Register</a></li>
+        </ul>
+        <div class="toggle">
+          <div></div>
+        </div>
+      </nav>
+      <section class="hero">
+        <div>
+          <h1>
+            Let`s <span>walk</span> <br />
+            together!
+          </h1>
+          <p>
+            Walking is an effective exercise method which boosts your mood and
+            helps you to avoid headaches the whole day. Just 30 minutes every
+            day can increase cardiovascular fitness, reduce excess body fat, and
+            boost muscle power. So let`s <span>walk</span> together!
+          </p>
+        </div>
+        <img src="../static/images/hero.jpg" alt="IMG" />
+      </section>
+    </header>
+    <section class="about">
+      <h1 data-aos="fade-down">Why <span>WalkMate</span>?</h1>
+      <div class="container">
+        <div data-aos="fade-up">
+          <img src="../static/icons/map.svg" alt="MAP" />
+          <h2>Motivation</h2>
+          <p>
+            <span>WalkMate</span> invites you to find fun in fitness and reap
+            the benefits of a healthier, active lifestyle.
+          </p>
+        </div>
+        <img
+          src="../static/images/walking.jpg"
+          alt="IMG"
+          id="walking"
+          data-aos="zoom-in"
+        />
+        <div data-aos="fade-up">
+          <img src="../static/icons/planet.svg" alt="PLANET" />
+          <h2>Positive impact</h2>
+          <p>
+            Just 30 minutes every day can strengthen bones, reduce excess body
+            fat, and boost muscle power and endurance.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div data-aos="fade-up" class="free">
+          <img src="../static/icons/free.png" alt="FRIEND" />
+          <h2>It's completely free</h2>
+          <p>
+            We are a charity led initiative supported by donations - there's no
+            adverts or subscription fees.
+          </p>
+        </div>
+        <div data-aos="fade-down">
+          <img src="../static/icons/friends.svg" alt="FRIEND" />
+          <h2>Meet new positive people</h2>
+          <p>
+            With <span>WalkMate</span> you can contact people from your town,
+            with similar interests for walk. It`s interesting and healthy!
+          </p>
+        </div>
+        <div data-aos="fade-up">
+          <img src="../static/icons/handshake.png" alt="FRIEND" />
+          <h2>Everyone is welcome</h2>
+          <p>Invite your your friends and family to walk with you.</p>
+        </div>
+      </div>
+    </section>
+    <section class="customers">
+      <h1 data-aos="fade-down" data-aos-once="true" id="title">
+        <span>Satisfied</span> Customers
+      </h1>
+      <section class="container">
+        <article>
+          <div data-aos="fade-up" data-aos-once="true">
+            <img src="../static/mates/person-2.png" alt="IMG" />
+            <h2>Monica</h2>
+            <h4>( 1.739km )</h4>
+          </div>
+          <div data-aos="fade-down" data-aos-once="true">
+            <img src="../static/mates/person-3.png" alt="IMG" />
+            <h2>Robert</h2>
+            <h4>( 1.454km )</h4>
+          </div>
+        </article>
+        <article>
+          <div data-aos="fade-up" data-aos-once="true">
+            <img src="../static/mates/person-4.png" alt="IMG" />
+            <h2>James</h2>
+            <h4>( 1.469km )</h4>
+          </div>
+          <div data-aos="fade-down" data-aos-once="true">
+            <img src="../static/mates/person-1.jpg" alt="IMG" />
+            <h2>Emma</h2>
+            <h4>( 1.352km )</h4>
+          </div>
+        </article>
+      </section>
+    </section>
+    <section class="end">
+      <!-- <div class="clouds"></div> -->
+      <img src="../static/images/clouds.png" alt="IMG" class="clouds" />
+      <h1 data-aos="zoom-out">You almost made it to the top!</h1>
+      <h2 data-aos="zoom-in">The world is at your feet!</h2>
+    </section>
+    <section class="register">
+      <h1>What are you waiting for?</h1>
+      <h2>Register now and start walking with your <span>mate!</span></h2>
+      <img src="../static/icons/down-arrow.svg" alt="IMG" />
+    </section>
+    <footer>
+      <a href="#">
+        <img src="../static/images/logo.png" alt="Logo" />
+      </a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ url_for('login') }}">Log in</a></li>
+        <li><a href="{{ url_for('register') }}">Register</a></li>
+      </ul>
+    </footer>
+    <section class="sidebar">
+      <ul>
+        <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ url_for('login') }}">Log in</a></li>
+        <li><a href="{{ url_for('register') }}">Register</a></li>
+      </ul>
+    </section>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../static/main.js"></script>
+  </body>
+</html>

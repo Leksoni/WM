@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;600;700&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
+
+$primaryColor: #01a3a5;
+$secondaryColor: #003d66;
+$primaryFont: "Work Sans", sans-serif;
+$secondaryFont: "Noto Serif Display", serif;
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin mediaLarge {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mediaMediumLarge {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mediaMedium {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaMediumLow {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mediaSmall {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}

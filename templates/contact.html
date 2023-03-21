@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../static/logo.ico" />
+    <link rel="stylesheet" href="../static/main.css" />
+    <title>Walkmate - Contact</title>
+  </head>
+  <body class="contactBody">
+    <nav>
+      <img src="../static/images/logo.png" alt="Logo" />
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+      </ul>
+      <div class="toggle">
+        <div></div>
+      </div>
+    </nav>
+    <h1>How to contact <span>mates</span> near you?</h1>
+    <section class="contact">
+      <div>
+        <div>
+          <h1>Via Email</h1>
+          <p>
+            One of the best solutions to contact somebody. Here are a few
+            benefits of using email. Fast - an email should reach its recipient
+            in minutes, or at the most within a few hours. Convenient - your
+            message will be stored until the recipient is ready to read it, and
+            you can easily send the same message to a large number of people. So
+            be sure to include your email while registering.
+          </p>
+        </div>
+        <img src="../static/images/email.jpg" alt="IMG" />
+      </div>
+      <div>
+        <img src="../static/images/facebook.png" alt="IMG" />
+        <div>
+          <h1>Via Facebook</h1>
+          <p>
+            Second solution for contacting <span>mates</span> is via Facebook.
+            Here are a few benefits of using Facebook. Fast - the faster you can
+            communicate, the more people will trust. Free to use - facebook
+            messaging is truly free. All you need is Internet access, and away
+            you go. You can send files & images, make a phone call. So be sure
+            to include your Facebook account while registering.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <img src="../static/images/logo.png" alt="Logo" />
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+      </ul>
+    </footer>
+    <section class="sidebar">
+      <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+      </ul>
+    </section>
+    <script src="../static/main.js"></script>
+  </body>
+</html>
